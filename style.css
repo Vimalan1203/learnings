@@ -1,0 +1,35 @@
+/* Apply box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Boxes */
+.box {
+  border: 2px solid #333;
+  padding: 16px;
+  margin: 10px 0;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+/* Responsive (mobile-first) */
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 30%; /* 3 boxes in one row */
+    margin: 10px;
+  }
+}
